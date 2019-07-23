@@ -32,13 +32,16 @@ def draw(*args):
     newfunc,msg = grapher.editFunc(orgfunc)
     
     if newfunc != None:
+        graph.screen.tracer(1)
         graph.plot_func(orgfunc,newfunc)
     else:
         func.set(msg)
     
 def reset():
+    graph.tracer(0)
     graph.reset_var()
     graph.resetgraph()
+    
         
         
 #Upper Part

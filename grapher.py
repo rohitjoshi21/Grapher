@@ -22,7 +22,7 @@ class Graph(RawTurtle,TurtleScreen):
         self.reset_var()
 
     def drawAxes(self):
-        #self.screen.tracer(0)
+        self.screen.tracer(0)
         xlen = self.width/2
         ylen = self.height/2
         self.up()
@@ -109,7 +109,6 @@ class Graph(RawTurtle,TurtleScreen):
 
 
     def plot_func(self,ofunc,nfunc):
-        self.screen.tracer(1)
         self.st()
         self.pensize(2)
         xt = self.xrange
